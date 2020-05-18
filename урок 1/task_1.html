@@ -1,0 +1,46 @@
+//1
+    let a = 8;
+    let b = 9;
+    if(a == b) {
+        console.log("Значения равны между собой");
+    } else {
+        if (a > b){
+            console.log(a);
+            } else {
+                console.log(b); 
+            }
+    } 
+
+//2
+    let result = "";
+    for (let i = 0; i < 100; i ++) {
+        result += String(i ** 2) + ", "; 
+    }
+    console.log(result);
+
+
+//2.1, 2.2
+    function getArray() {
+        let result = [];
+        for (let i = 0; i < 100; i++) {
+            result[i] = i ** 2;
+        }
+        return result;
+    } 
+    console.log(getArray());
+
+//3
+    let n = 0;
+    while (n < 100) {
+        console.log(n**2);
+        n++;
+    }
+    
+//4
+// подсчет прибыли в следующем году, если в этом году каждый месяц будете откладывать по 10% от зарплаты
+
+    const mounth = prompt("введите ваш месячный оклад в рублях");
+    const sum = mounth * 0.1 * 12;
+    alert("Ваша прибыль в следующем году составит " + sum + " рублей");
+    console.log(sum);
+

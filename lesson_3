@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script type="text/javascript">
+
+//3.1
+    // Предусмотреть в коде пустой объект. Попросить пользователя 
+    // ввести своё имя, следом попросить пользователя ввести свой 
+    // возраст. Создать в заранее предусмотренном пустом объекте 
+    // свойства под имя и под возраст и занести туда соответствующие 
+    // данные
+
+    let user = {};
+    
+    user.name = prompt('Введите ваше имя');
+    user.age = prompt('Введите каш возраст');
+    console.log(user);
+
+
+//3.3
+    // Создать объект animal с полями name, age, weight. Добавить 
+    // в объект функцию big, которая возвращает true, если weight > 500, 
+    // и false, если weight <= 500
+    
+    let animal = {name: 'lion', age: 10, weight: 300};
+    fnction big () {
+        if (animal.weight > 500) {
+        return true;
+        } else {
+        return false;     
+        }
+    }
+    console.log(big())
+
+    </script>
+    
+</body>
+</html>

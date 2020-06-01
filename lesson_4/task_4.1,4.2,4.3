@@ -1,0 +1,55 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id = "old"></select>
+
+
+    <script type="text/javascript">
+
+//4.1
+    // Написать функцию, которая принимает на вход 3 параметра: название тега, 
+    // название css класса, содержимое. Функция должна сформировать необходимый 
+    // тег, добавить необходимый класс и внести содержимое. Попробовать 
+    // попользоваться такой функцией в коде программы (не отправлять созданную 
+    // разметку на страницу) 
+
+    function myDiv(){
+        var div = document.body.createElement('div');
+        div.className = "firstDiv";
+        var text = document.createTextNode('Hello world!');
+        div.appendChild(text);
+        }
+    
+
+
+//4.2
+    // Создать с помощью js абзац (тег p). Добавить в него контент. Добавить к нему 
+    // стили: размер 36px, жирный шрифт. Добавить абзац с текстом на страницу.  
+
+    document.write ('<p style="fontSize: 36px"><b> Я сидел на лавочке, когда ко мне в руки попал этот листок. Ветер поднял с асфальта тетрадный лист бумаги. Он словно слабый птенец вспорхнул и приземлился на лавочку рядом со мной. И ветра-то особого не было. Так, случайный порыв. Почему ко мне прилетел этот листок? Мистика какая-то? Да.</b></p>'); 
+
+
+
+//4.3
+    // Вставить в страницу (в html документ) тег <select>. С помощью js добавить в этот 
+    // select опции (option) под годы от 1960 по 2020. 
+
+    
+
+var objSel = document.getElementById('old');
+
+objSel.options[0] = new Option("1960");
+objSel.options[1] = new Option("2020");
+
+//как с по селект сделать?
+
+    </script>
+    
+</body>
+</html>

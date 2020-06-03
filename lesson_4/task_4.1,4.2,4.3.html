@@ -49,10 +49,11 @@
 
 var objSel = document.getElementById('old');
 
-objSel.options[0] = new Option("1960");
-objSel.options[1] = new Option("2020");
+for (let i = 0; i <= 60; i++) {
+    objSel.options[i] = new Option(1960 + i);
+}
 
-//как с по селект сделать?
+
 
     </script>
     
